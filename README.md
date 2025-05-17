@@ -59,9 +59,9 @@ Toda esta información se **envía en formato JSON a un broker MQTT**, permitien
 [wifi/status]
 {
   "connected": true,
-  "ssid": "FAMILIA MENDOZA",
-  "ip": "192.168.0.20",
-  "mac": "F4:65:0B:47:DF:24",
+  "ssid": "Aqui aparecera el nombre de tu red wifi",
+  "ip": "aqui aparece la IP",
+  "mac": "Aqui tu direccion MAC",
   "rssi": -46
 }
 [system/memory]
