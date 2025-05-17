@@ -53,3 +53,30 @@ Toda esta información se **envía en formato JSON a un broker MQTT**, permitien
 #define MQTT_TOPIC_MEMORY "esp32/system/memory"
 
 #define WIFI_INFO_INTERVAL 5000  // En ms
+
+## Salida:
+
+[wifi/status]
+{
+  "connected": true,
+  "ssid": "FAMILIA MENDOZA",
+  "ip": "192.168.0.20",
+  "mac": "F4:65:0B:47:DF:24",
+  "rssi": -46
+}
+[system/memory]
+{
+  "memory": {
+    "heap": {
+      "total": 330992,
+      "free": 241656,
+      "used": 89336
+    },
+    "flash": {
+      "total": 1318001,
+      "used": 0,
+      "free": 1318001
+    },
+    "uptime_ms": 1303723
+  }
+}
