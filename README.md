@@ -54,7 +54,7 @@ Toda esta información se **envía en formato JSON a un broker MQTT**, permitien
 
 #define WIFI_INFO_INTERVAL 5000  // En ms
 
-## Salida:
+## Salida (monitor serial):
 
 [wifi/status]
 {
