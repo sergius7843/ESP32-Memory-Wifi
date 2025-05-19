@@ -4,6 +4,9 @@
 #include "memory_monitor.h"
 #include "mqtt_client.h"
 #include "config.h"
+#include "status_reporter.h"
+#include "temperature_sensor.h"
+
 
 // Tarea que imprime y publica estado WiFi
 void wifiInfoTask(void *parameter) {
@@ -55,6 +58,13 @@ void setup() {
         NULL,
         1
     );
+
+    // Tarea de status (heartbeat MQTT)
+    start_status_reporter_task();
+
+    //Tarea para el sensor de temperatura
+    start_temperature_task();
+
 }
 
 void loop() {
